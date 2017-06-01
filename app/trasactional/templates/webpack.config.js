@@ -2,10 +2,10 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: ["./app/campaigns-router.js", "whatwg-fetch"],
+    entry: ["./app/templates-router.js", "whatwg-fetch"],
     output: {
-        filename: "../assets/js/dependencies/campaigns-bundle.js",
-        sourceMapFilename: "../assets/js/dependencies/campaigns-bundle.map"
+        filename: "../assets/js/dependencies/templates-bundle.js",
+        sourceMapFilename: "../assets/js/dependencies/templates-bundle.map"
     },
     devtool: '#cheap-module-source-map',
     module: {
