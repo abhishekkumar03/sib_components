@@ -1,0 +1,26 @@
+{
+  "name": "sib_components",
+  "version": "1.0.0",
+  "description": "React components that should be used on any platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekkumar03/sib_components.git"
+  },
+  "keywords": [
+    "trasactional",
+    "templates",
+    "marketing",
+    "sms",
+    "trigger"
+  ],
+  "author": "Abhishek abhishek@sendinblue.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishekkumar03/sib_components/issues"
+  },
+  "homepage": "https://github.com/abhishekkumar03/sib_components#readme"
+}
