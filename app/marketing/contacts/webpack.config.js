@@ -2,7 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 
 module.exports = {
-    entry: ["./app/contacts-router.js", "whatwg-fetch"],
+    entry: ["./app/router.js", "whatwg-fetch"],
     output: {
         filename: "../assets/js/dependencies/contacts-bundle.js",
         sourceMapFilename: "../assets/js/dependencies/contacts-bundle.map"
