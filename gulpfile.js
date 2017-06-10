@@ -2,14 +2,14 @@ var gulp = require('gulp');
 var del = require('del');
 var webpack = require('webpack-stream');
 
-var webpackMarkCampaignsConfig = require('./app/marketing/campaigns/webpack.config.js');
-var webpackMarkCampaignsConfigDev = require('./app/marketing/campaigns/webpack.config.dev.js');
+var webpackMarkCampaignsConfig = require('./app/webpack.mark.campaigns.config.js');
+var webpackMarkCampaignsConfigDev = require('./app/webpack.mark.campaigns.config.dev.js');
 
-var webpackMarkContactsConfig = require('./app/marketing/contacts/webpack.config.js');
-var webpackMarkContactsConfigDev = require('./app/marketing/contacts/webpack.config.dev.js');
+var webpackMarkContactsConfig = require('./app/webpack.mark.contacts.config.js');
+var webpackMarkContactsConfigDev = require('./app/webpack.mark.contacts.config.dev.js');
 
-var webpackTransTemplatesConfig = require('./app/trasactional/templates/webpack.config.js');
-var webpackTransTemplatesConfigDev = require('./app/trasactional/templates/webpack.config.dev.js');
+var webpackTransTemplatesConfig = require('./app/webpack.trans.templates.config.js');
+var webpackTransTemplatesConfigDev = require('./app/webpack.trans.templates.config.dev.js');
 
 //gulp.task('clean:build', function() {
     //del('..assets/js/dependencies/campaigns-bundle.js')
@@ -17,7 +17,7 @@ var webpackTransTemplatesConfigDev = require('./app/trasactional/templates/webpa
 
 // Code for marketing campaigns components..
 gulp.task('markCampaigns', [], function() {
-  return gulp.src('./app/marketing/campaigns/router.js')
+  return gulp.src('./app/marketing/campaigns-router.js')
     .pipe(webpack(webpackMarkCampaignsConfig))
     .on('error', function handleError() {
       this.emit('end'); // Recover from errors
@@ -26,7 +26,7 @@ gulp.task('markCampaigns', [], function() {
 });
 
 gulp.task('markCampaignsDev', [], function() {
-  return gulp.src('./app/marketing/campaigns/router.js')
+  return gulp.src('./app/marketing/campaigns-router.js')
     .pipe(webpack(webpackMarkCampaignsConfigDev))
     .on('error', function handleError() {
       this.emit('end'); // Recover from errors
@@ -40,7 +40,7 @@ gulp.task('watch:markCampaignsDev', function() {
 
 // Code for marketing contacts components..
 gulp.task('markContacts', [], function() {
-  return gulp.src('./app/trasactional/contacts/router.js')
+  return gulp.src('./app/marketing/contacts-router.js')
     .pipe(webpack(webpackMarkContactsConfig))
     .on('error', function handleError() {
       this.emit('end'); // Recover from errors
@@ -49,7 +49,7 @@ gulp.task('markContacts', [], function() {
 });
 
 gulp.task('markContactsDev', [], function() {
-  return gulp.src('./app/trasactional/contacts/router.js')
+  return gulp.src('./app/marketing/contacts-router.js')
     .pipe(webpack(webpackMarkContactsConfigDev))
     .on('error', function handleError() {
       this.emit('end'); // Recover from errors
@@ -63,7 +63,7 @@ gulp.task('watch:markContactsDev', function() {
 
 // Code for transectional components..
 gulp.task('transTemplates', [], function() {
-  return gulp.src('./app/trasactional/templates/router.js')
+  return gulp.src('./app/transactional/templates-router.js')
     .pipe(webpack(webpackTransTemplatesConfig))
     .on('error', function handleError() {
       this.emit('end'); // Recover from errors
@@ -72,7 +72,7 @@ gulp.task('transTemplates', [], function() {
 });
 
 gulp.task('transTemplatesDev', [], function() {
-  return gulp.src('./app/trasactional/templates/router.js')
+  return gulp.src('./app/transactional/templates-router.js')
     .pipe(webpack(webpackTransTemplatesConfigDev))
     .on('error', function handleError() {
       this.emit('end'); // Recover from errors
