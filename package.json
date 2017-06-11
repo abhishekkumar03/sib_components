@@ -34,9 +34,7 @@
     "react-file-input": "^0.2.5",
     "react-form-data": "^0.2.3",
     "react-global-events": "^1.0.2",
-    "react-router": "2.0.0"
-  },
-  "devDependencies": {
+    "react-router": "2.0.0",
     "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.4",
@@ -56,6 +54,8 @@
     "webpack": "^1.12.14",
     "webpack-stream": "^3.1.0",
     "whatwg-fetch": "^2.0.1"
+  },
+  "devDependencies": {
   },
   "bugs": {
     "url": "https://github.com/abhishekkumar03/sib_components/issues"
