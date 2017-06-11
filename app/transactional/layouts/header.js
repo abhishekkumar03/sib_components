@@ -9,9 +9,6 @@
 // @by                 Laure <laure@sendinblue.com>
 */
 import React, { Component } from 'react';
-import { Link } from 'react-router';
-import {listenFor} from '../event-system.js';
-
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -26,15 +23,15 @@ class Header extends Component {
 
                     {/* begin .col */}
                     <div className="col-md-12 clearfix">
-						<div className="">
-							<div className="pull-right">
+                        <div className="">
+                            <div className="pull-right">
                                 <a className="btn btn-ghost m-l-sm" href="javascript:void(0);"><i className="fa fa-power-off"></i> Create Template</a>
                             </div>
-							<h2>
-								<span className="sib-logo-symbol logo-primary m-r-xs"></span>
-								<b>Transactional Templates</b> › <small>Listing</small>
-							</h2>
-						</div>
+                            <h2>
+                                <span className="sib-logo-symbol logo-primary m-r-xs"></span>
+                                <b>Transactional Templates</b> › <small>Listing</small>
+                            </h2>
+                        </div>
                     </div>
                     {/* end .col */}
 

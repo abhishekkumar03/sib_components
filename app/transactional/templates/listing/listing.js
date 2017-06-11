@@ -7,7 +7,11 @@ class Listing extends Component {
 
     render() {
         return (
-            <div> listing content goes here</div>
+            <h2>
+                <b>Templates</b> › <small>data</small>
+            </h2>
         );
     }
 }
+
+export default Listing;

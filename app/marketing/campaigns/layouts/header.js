@@ -23,8 +23,8 @@ class Header extends Component {
 
                     {/* begin .col */}
                     <div className="col-md-12 clearfix">
-						<div className="">
-							<div className="btn-group">
+                        <div className="">
+                            <div className="btn-group">
                                 <button type="button" className="btn btn-ghost" >test</button>
                                 <button type="button" className="btn btn-ghost dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span className="caret"></span><span className="sr-only">s</span>
@@ -34,11 +34,11 @@ class Header extends Component {
                                     <li><a href="javascript:void(0);" >Exit</a></li>
                                 </ul>
                             </div>
-							<h2>
-								<span className="sib-logo-symbol logo-primary m-r-xs"></span>
-								<b>Campaign Creation</b> › <small>Setup</small>
-							</h2>
-						</div>
+                            <h2>
+                                <span className="sib-logo-symbol logo-primary m-r-xs"></span>
+                                <b>Campaign Creation</b> › <small>Setup</small>
+                            </h2>
+                        </div>
                     </div>
                     {/* end .col */}
 

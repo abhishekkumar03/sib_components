@@ -1,47 +1,21 @@
 import React, { Component } from 'react';
-import {browserHistory} from 'react-router';
+import TemplatesHeader from './header';
+// Pages
+import Listing from '../templates/listing/listing';
+
 class MainLayout extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            templatesData: []
-        }
     }
 
-    componentWillMount() {
-        // TODO : set initial data here
-    }
-
-    // TODO : function to save data
-    handelSubmit(dataToSave) {
-    }
-
-    // TODO : function to localize content
-    translate(transVariable, options) {
-        options = options||[];
-        if (typeof($.t) == 'function') {
-            transVariable = $.t(transVariable, options);
-            return <span dangerouslySetInnerHTML={{__html: transVariable}} />;
-        }
-        return '';
-    }
-    
     render() {
-        let contentData = content && React.cloneElement(content, {
-            templatesData: this.state.templatesData,
-            translate: this.translate,
-            handelSubmit: this.handelSubmit,
-        });
-
         return (
             <div className="container-fluid fade in fade-load" id="main-container">                
                 {/* begin #main-content */}
-                {alertDisplay}
-                
                 <div id="main-content">
                     
                     {/* begin #header */}
-                    {this.props.header}
+                    <TemplatesHeader />
                     {/* end #header */}
                         
                     {/* begin #content */}
@@ -50,7 +24,7 @@ class MainLayout extends Component {
                         <div className="row">
                             {/* begin .col */}
                             <div className="col-md-12">
-                                {contentData}
+                                <Listing />
                             </div>
                             {/* end .col */}
 
