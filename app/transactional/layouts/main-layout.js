@@ -10,7 +10,7 @@ class MainLayout extends Component {
 
     render() {
         return (
-            <div className="container-fluid fade in fade-load" id="main-container">                
+            <div className="container-fluid fade in fade-load col-md-12">                
                 {/* begin #main-content */}
                 <div id="main-content">
                     
