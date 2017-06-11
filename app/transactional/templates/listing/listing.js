@@ -22,7 +22,7 @@ class Listing extends Component {
                     
                             <div className="pull-left campselecteall checkbox camp-list-select-btn" style="margin-left: 5px; display: block;">
                                 <label>
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1">
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1" />
                                     <small><b>Select All</b></small>
                                 </label>
                             </div>
