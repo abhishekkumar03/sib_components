@@ -58,14 +58,12 @@ class Listing extends Component {
                                             </td>
                                             <td className="text-muted">#65</td>
                                             <td>La famille du Grizzly s'est agrandi p...</td>
+                                            <td></td>
                                             <td className="text-light text-left">
                                                 <span data-original-title="Creation date" data-toggle="tooltip" data-placement="top" className="tooltip-help">24 Oct, 2016 06:53 AM</span>
                                             </td>
                                             <td className="text-right">
                                                 <a className="btn btn-primary btn-sm spacer-right-xxs camp_action" href="javascript:void(0);"><span className="fa fa-pencil"></span> Edit</a>
-                                                <div className="report-btn-camp-blk">
-                                                    <a className="btn btn-primary btn-sm spacer-right-xxs report-btn-camp disabled btn-disabled" href="javascript:void(0)"><i className="fa fa-bar-chart"></i> Report</a>
-                                                </div>
                                                 <div className="btn-group">
                                                     <a className="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" href="#">Actions <span className="caret"></span> </a>
                                                     <ul className="dropdown-menu text-left pull-right" id="messsage_65">
