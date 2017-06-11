@@ -20,14 +20,14 @@ class Listing extends Component {
                         {/* begin .col */}
                         <div className="col-md-12">
                     
-                            <div className="pull-left campselecteall checkbox camp-list-select-btn" style="margin-left: 5px; display: block;">
+                            <div className="pull-left campselecteall checkbox camp-list-select-btn" style={{marginleft: '5px', display: 'block'}}>
                                 <label>
                                     <input type="checkbox" id="inlineCheckbox1" value="option1" />
                                     <small><b>Select All</b></small>
                                 </label>
                             </div>
                         
-                            <div className="pull-left" id="checkaction" style="display:none; margin-left:10px; margin-top:8px;"><div className="btn-group">                                <a href="#" className="archive_all btn btn-default btn-xs" action-name="archive_all" data-type="classic" req_from="sent">                                    <i className="fa fa-file-archive-o"></i> Archive                                </a></div></div>
+                            <div className="pull-left" id="checkaction" style={{display:'none', marginLeft:'10px', marginTop:'8px'}}><div className="btn-group">                                <a href="#" className="archive_all btn btn-default btn-xs" action-name="archive_all" data-type="classic" req_from="sent">                                    <i className="fa fa-file-archive-o"></i> Archive                                </a></div></div>
                             
                         </div>
                         {/* end .col */}
