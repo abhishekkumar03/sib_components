@@ -1,0 +1,812 @@
+/*
+Theme Name    SendinBlue v3
+Author        The SendinBlue Team
+Author URI    http://sendinblue.com/
+Description   Transactional CSS
+Version       4.0
+---------------------------------------
+Last Edit     02/12/2014
+By            Laure
+*/
+@import "https://static.sendinblue.com/styles/reset.css";
+@import "https://static.sendinblue.com/styles/elements.css";
+@import "https://static.sendinblue.com/styles/layout.css";
+
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 1.42857;
+    font-weight: normal;
+    background-color: #e8e8e8;
+    position: relative;
+}
+
+#page-container {
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-width: 570px;
+    padding-top: 0px;
+    position: absolute;
+}
+
+/*---------------------------------------------------------------------------
+[Table of contents]
+
+Notes: For reseller personalization properties, look for [RSL] tag
+---------------------------------------------------------------------------*/
+
+/* ==========================================================================
+date-range-picker plugin
+========================================================================== */
+
+.smtp-line-chart {
+	/* box model properties */
+	padding: 20px;
+}
+
+/* ==========================================================================
+date-range-picker plugin
+========================================================================== */
+
+.inner-addon input {
+	/* box model properties */
+	width: 210px;
+	padding: 0;
+
+	/* typography definitions */
+	text-align: center;
+
+	/* background and borders */
+	border: none;
+	background: none;
+
+	/* additional properties */
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+/* ==========================================================================
+Colors for each state
+
+smtp-label-se  sent            : #95a5a7
+smtp-label-op  opened          : #5b9cd2
+smtp-label-u_o first opening   : #a0c0e4
+smtp-label-dl  delivered       : #34495f
+smtp-label-cl  clicked         : #6eb961
+smtp-label-df  deffered        : #bd5c9c
+smtp-label-hb  hard bounce     : #c0392b
+smtp-label-sb  soft bounce     : #e67e22
+smtp-label-bl  blocked         : #7863bc
+smtp-label-sp  spam            : #eaa000
+smtp-label-de  denied          : #7a869c
+smtp-label-rb  repeated bounce : #dd6749
+smtp-label-in  invalid email   : #b33354
+
+========================================================================== */
+
+/* sent
+---------------------------- */
+
+/* labels */
+.smtp-label-se {
+	/* background and borders */
+	background: #95a5a7;
+}
+
+/* tiles */
+.tiles.smtp-tiles-se {
+	/* background and borders */
+	background: #95a5a7;
+}
+.tiles-white.smtp-tiles-se .tiles-body {
+	/* typography definitions */
+	color: #95a5a7;
+}
+a.tiles.smtp-tiles-se:hover {
+	/* background and borders */
+	background: #95a5a7;
+}
+
+/* text */
+.smtp-text-se {
+	/* typography definitions */
+	color: #95a5a7;
+}
+
+/* opened
+---------------------------- */
+
+/* labels */
+.smtp-label-op {
+	/* background and borders */
+	background: #5b9cd2;
+}
+
+/* labels */
+.smtp-label-u_o {
+	/* background and borders */
+	background: #a0c0e4;
+}
+
+/* tiles */
+.tiles.smtp-tiles-op {
+	/* background and borders */
+	background: #5b9cd2;
+}
+.tiles-white.smtp-tiles-op .tiles-body {
+	/* typography definitions */
+	color: #5b9cd2;
+}
+a.tiles.smtp-tiles-op:hover {
+	/* background and borders */
+	background: #5b9cd2;
+}
+
+/* text */
+.smtp-text-op {
+	/* typography definitions */
+	color: #5b9cd2;
+}
+
+/* delivered
+---------------------------- */
+
+/* labels */
+.smtp-label-dl {
+	/* background and borders */
+	background: #34495f;
+}
+
+/* tiles */
+.tiles.smtp-tiles-dl {
+	/* background and borders */
+	background: #34495f;
+}
+.tiles-white.smtp-tiles-dl .tiles-body {
+	/* typography definitions */
+	color: #34495f;
+}
+a.tiles.smtp-tiles-dl:hover {
+	/* background and borders */
+	background: #34495f;
+}
+
+/* text */
+.smtp-text-dl {
+	/* typography definitions */
+	color: #34495f;
+}
+
+/* clicked
+---------------------------- */
+
+/* labels */
+.smtp-label-cl {
+	/* background and borders */
+	background: #6eb961;
+}
+
+/* tiles */
+.tiles.smtp-tiles-cl {
+	/* background and borders */
+	background: #6eb961;
+}
+.tiles-white.smtp-tiles-cl .tiles-body {
+	/* typography definitions */
+	color: #6eb961;
+}
+a.tiles.smtp-tiles-cl:hover {
+	/* background and borders */
+	background: #6eb961;
+}
+
+/* text */
+.smtp-text-cl {
+	/* typography definitions */
+	color: #6eb961;
+}
+
+/* deffered
+---------------------------- */
+
+/* labels */
+.smtp-label-df {
+	/* background and borders */
+	background: #bd5c9c;
+}
+
+/* tiles */
+.tiles.smtp-tiles-df {
+	/* background and borders */
+	background: #bd5c9c;
+}
+.tiles-white.smtp-tiles-df .tiles-body {
+	/* typography definitions */
+	color: #bd5c9c;
+}
+a.tiles.smtp-tiles-df:hover {
+	/* background and borders */
+	background: #bd5c9c;
+}
+
+/* text */
+.smtp-text-df {
+	/* typography definitions */
+	color: #bd5c9c;
+}
+
+/* hard bounce
+---------------------------- */
+.smtp-label-hb {
+	/* background and borders */
+	background: #c0392b;
+}
+
+/* tiles */
+.tiles.smtp-tiles-hb {
+	/* background and borders */
+	background: #c0392b;
+}
+.tiles-white.smtp-tiles-hb .tiles-body {
+	/* typography definitions */
+	color: #c0392b;
+}
+a.tiles.smtp-tiles-hb:hover {
+	/* background and borders */
+	background: #c0392b;
+}
+
+/* text */
+.smtp-text-hb {
+	/* typography definitions */
+	color: #c0392b;
+}
+
+/* soft bounce
+---------------------------- */
+
+/* labels */
+.smtp-label-sb {
+	/* background and borders */
+	background: #e67e22;
+}
+
+/* tiles */
+.tiles.smtp-tiles-sb {
+	/* background and borders */
+	background: #e67e22;
+}
+.tiles-white.smtp-tiles-sb .tiles-body {
+	/* typography definitions */
+	color: #e67e22;
+}
+a.tiles.smtp-tiles-sb:hover {
+	/* background and borders */
+	background: #e67e22;
+}
+
+/* text */
+.smtp-text-sb {
+	/* typography definitions */
+	color: #e67e22;
+}
+
+/* blocked
+---------------------------- */
+
+/* labels */
+.smtp-label-bl {
+	/* background and borders */
+	background: #7863bc;
+}
+
+/* tiles */
+.tiles.smtp-tiles-bl {
+	/* background and borders */
+	background: #7863bc;
+}
+.tiles-white.smtp-tiles-bl .tiles-body {
+	/* typography definitions */
+	color: #7863bc;
+}
+a.tiles.smtp-tiles-bl:hover {
+	/* background and borders */
+	background: #7863bc;
+}
+
+/* text */
+.smtp-text-bl {
+	/* typography definitions */
+	color: #7863bc;
+}
+
+/* spam
+---------------------------- */
+
+/* labels */
+.smtp-label-sp {
+	/* background and borders */
+	background: #eaa000;
+}
+
+/* tiles */
+.tiles.smtp-tiles-sp {
+	/* background and borders */
+	background: #eaa000;
+}
+.tiles-white.smtp-tiles-sp .tiles-body {
+	/* typography definitions */
+	color: #eaa000;
+}
+a.tiles.smtp-tiles-sp:hover {
+	/* background and borders */
+	background: #eaa000;
+}
+
+/* text */
+.smtp-text-sp {
+	/* typography definitions */
+	color: #eaa000;
+}
+
+/* denied
+---------------------------- */
+
+/* labels */
+.smtp-label-de {
+	/* background and borders */
+	background: #7a869c;
+}
+
+/* tiles */
+.tiles.smtp-tiles-de {
+	/* background and borders */
+	background: #7a869c;
+}
+.tiles-white.smtp-tiles-de .tiles-body {
+	/* typography definitions */
+	color: #7a869c;
+}
+a.tiles.smtp-tiles-de:hover {
+	/* background and borders */
+	background: #7a869c;
+}
+
+/* text */
+.smtp-text-de {
+	/* typography definitions */
+	color: #7a869c;
+}
+
+/* repeated bounce
+---------------------------- */
+
+/* labels */
+.smtp-label-rb {
+	/* background and borders */
+	background: #dd6749;
+}
+
+/* tiles */
+.tiles.smtp-tiles-rb {
+	/* background and borders */
+	background: #dd6749;
+}
+.tiles-white.smtp-tiles-rb .tiles-body {
+	/* typography definitions */
+	color: #dd6749;
+}
+a.tiles.smtp-tiles-rb:hover {
+	/* background and borders */
+	background: #dd6749;
+}
+
+/* text */
+.smtp-text-rb {
+	/* typography definitions */
+	color: #dd6749;
+}
+
+/* invalid email
+---------------------------- */
+
+/* labels */
+.smtp-label-in {
+	/* background and borders */
+	background: #b33354;
+}
+
+/* tiles */
+.tiles.smtp-tiles-in {
+	/* background and borders */
+	background: #b33354;
+}
+.tiles-white.smtp-tiles-in .tiles-body {
+	/* typography definitions */
+	color: #b33354;
+}
+a.tiles.smtp-tiles-in:hover {
+	/* background and borders */
+	background: #b33354;
+}
+
+/* text */
+.smtp-text-in {
+	/* typography definitions */
+	color: #b33354;
+}
+
+/* Unsubscribed email
+---------------------------- */
+
+/* labels */
+.smtp-label-un {
+    /* background and borders */
+    background: #666666;
+}
+
+/* tiles */
+.tiles.smtp-tiles-un {
+    /* background and borders */
+    background: #666666;
+}
+.tiles-white.smtp-tiles-un .tiles-body {
+    /* typography definitions */
+    color: #666666;
+}
+a.tiles.smtp-tiles-un:hover {
+    /* background and borders */
+    background: #666666;
+}
+
+/* text */
+.smtp-text-un {
+    /* typography definitions */
+    color: #666666;
+}
+
+/* Jquery calendar bottom buttons fix*/
+.daterangepicker .ranges{ width:203px !important;}
+
+.top_nav_position{
+    margin-top: -4px;
+    display: inline-block;
+    color:#4ca4e0 !important;
+    text-transform: capitalize;
+}
+
+/*--------------------------------------
+  Styles for new header/navigations
+---------------------------------------*/
+
+.main-header{
+    padding-left:10px;
+}
+.logo {
+    color: #fff;
+    float: left;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.2s ease 0s;
+}
+.logo .sib-logo-icon {
+    font-size: 34px;
+    margin: 0;
+    position: relative;
+    top: 3px;
+}
+.logo .sib-logo-icon::before {
+    content: "";
+}
+.logo .t-logo-text {
+    position: relative;
+    top: -5px;
+}
+.main-nav {
+    list-style:none;
+    float: left;
+    margin:0;
+    font-family:Montserrat,Arial,Helvetica,sans-serif;
+    padding-left:100px;
+}
+.main-nav li {
+    float: left;
+    margin-left: 15px; }
+.main-nav li a {
+    color: #fff;
+    display: block;
+    font-weight: normal;
+    outline: medium none;
+    padding: 10px;
+    font-size:14px;
+}
+.main-nav li a:hover{
+    color: rgba(255, 255, 255, 0.75);
+}
+/* ------------------------------------------------
+	NAV MOBILE
+------------------------------------------------ */
+
+.mobile-nav {
+    display: none; }
+.trigger-mobile-nav,.trigger-mobile-nav:focus, .trigger-mobile-nav:hover{
+    display: none;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    color: #fff;
+    text-align: right;
+    float: right; }
+.trigger-mobile-nav:focus {
+    outline: none;display:block; }
+.trigger-mobile-nav:hover {
+    cursor: pointer;
+    display:block; }
+
+@media (max-width:767px){
+    .desktop-nav,.navbar-user {
+        display: none; }
+    .trigger-mobile-nav {
+        display: block; }
+}
+
+
+
+/*-------------------------------------
+  Company name in header after login
+-------------------------------------*/
+.wrapper-header .user-company {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 20px;
+    max-width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+.wrapper-header.top-nav-collapse .user-company {
+    background: #69cb95;
+    border-color: #69cb95;
+    color: #fff;
+    border-radius: 6px;
+    padding: 8px 20px; }
+
+.mobile-nav .user-company {
+    background: none;
+    color: #69cb95;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+
+
+.trigger-mobile-nav, .main-header .logo{-webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;}
+
+body.open-nav{
+    overflow:hidden;
+}
+
+body.open-nav .mobile-nav {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+body.open-nav #page-container,body.open-nav .trigger-mobile-nav, body.open-nav .main-header .logo {
+    -webkit-transform: translate3d(-210px, 0, 0);
+    -moz-transform: translate3d(-210px, 0, 0);
+    -ms-transform: translate3d(-210px, 0, 0);
+    -o-transform: translate3d(-210px, 0, 0);
+    transform: translate3d(-210px, 0, 0); }
+.mobile-nav {
+    -webkit-transform: translate3d(210px, 0, 0);
+    -moz-transform: translate3d(210px, 0, 0);
+    -ms-transform: translate3d(210px, 0, 0);
+    -o-transform: translate3d(210px, 0, 0);
+    transform: translate3d(210px, 0, 0);
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background: #3c4764;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 210px;
+    display: block;
+    overflow-y: auto; }
+.mobile-nav a {
+    outline: 0;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+}
+.mobile-nav a:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.07); }
+.mobile-nav .main-nav, .mobile-nav .login-nav {
+    margin-bottom: 0;
+    list-style-type: none;
+    padding-left: 0;
+    clear:both; }
+.mobile-nav .main-nav a, .mobile-nav .login-nav a {
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.75); }
+.mobile-nav .main-nav a:hover, .mobile-nav .login-nav a:hover {
+    color:#fff;
+}
+.mobile-nav .main-nav li, .mobile-nav .login-nav li {
+    margin-bottom: 0;
+    margin-left:0;
+    width:100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
+.mobile-nav .wrapper-submenu {
+    position: relative; }
+.mobile-nav .submenu {
+    background: #3c4764;
+    display: none; }
+.mobile-nav .submenu .submenu-nav {
+    list-style-type: none;
+    padding-left: 0; }
+.mobile-nav .submenu .submenu-nav li {
+    border: none; }
+.mobile-nav .submenu a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0; }
+.mobile-nav .login-nav .signup {
+    color: #69cb95; }
+
+
+/* ------------------------------------------------
+	Dashboard tabs
+------------------------------------------------ */
+.nav-pills-sb > li {
+    float: left;
+}
+.nav-pills-sb > li > a {
+}
+.nav-pills-sb > li + li {
+    margin-left: 2px;
+}
+.nav-pills-sb > li.active > a{
+    border-bottom:2px solid #000000;
+}
+.nav-pills-sb > li.active > a:hover{
+    background:none;
+}
+.nav-pills-sb > li.active > a:focus {
+    border-bottom:2px solid #000000;
+    background: none;
+}
+
+/*----------------------------------------
+  Active Menu Arrow New Navigation
+----------------------------------------*/
+.desktop-nav li a{
+    position:relative;
+}
+.desktop-nav li a.active::before{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #e8e8e8;
+    position:absolute;
+    content:'';
+    bottom:-11px;
+    transform:translateX(50%);
+    left:50%;
+    margin-left:-15px;
+}
+
+/*----------------------------------------
+  Adding z-index to top nav
+----------------------------------------*/
+#top-nav {
+    z-index:1;
+}
+
+/*----------------------------------------
+  Exponent font size
+----------------------------------------*/
+.expo_font{
+    font-weight: normal;
+    font-size: 73%;
+    font-family: sans-serif;
+}
+
+
+/*------------------------------
+For Headers/Menu
+-------------------------------*/
+.support-call {
+    /* box model properties */
+    padding:7px 15px;
+
+    /* typography definitions */
+    font-size:14px;
+    color:#999;
+}
+#modal-change-lang .modal-body {
+    /* background and borders */
+    background:#fff;
+    border-radius:0 0 5px 5px;
+}
+#modal-change-lang ul {
+    /* box model properties */
+    padding:0;
+    margin:20px 10px;
+    list-style:none;
+
+    /* background and borders */
+    border:1px solid #e2e2e2   !important;
+    border-radius:5px;
+}
+#modal-change-lang ul li {
+    /* background and borders */
+    border-bottom:1px solid #e2e2e2  ;
+}
+#modal-change-lang ul li:last-child {
+    /* background and borders */
+    border-bottom:none;
+}
+#modal-change-lang ul li a {
+    /* box model properties */
+    padding:10px;
+    display:block;
+
+    /* typography definitions */
+    color:#333;
+    font-weight:600;
+    font-size:13px;
+}
+#modal-change-lang ul li a:hover {
+    /* background and borders */
+    background:#f5f5f5  ;
+}
+#modal-change-lang .flag-icon {
+    /* box model properties */
+    margin-right:5px;
+}
+/* Main content overwrite css, delete it when this css is on static css*/
+#main-content{
+    border-radius:3px 0 0;
+    height:100%;
+    display:table;
+    width:100%;
+}
+/* Global pointer */
+.click_pointer{
+    cursor: pointer;
+}
+/* Left navigation anchor class, sidebar-title2 added to solve quota help link issue by anshul 20/12/2016 */
+a.sib-link { color: #a4d1ef; text-decoration: underline; font-size:12px; padding-left: 3px; width: 160px; padding-top: 3px; word-wrap: break-word; white-space: normal;}
+a.sib-link:hover { color: #FFFFFF; }
+.sidebar-tile2 {
+    padding: 20px 15px 20px 30px;
+}
+

@@ -41,3 +41,6 @@ jspm_packages
 
 # Lib
 lib
+
+example/build/test.html
+example/assets/js/dependencies/*bundle.*
