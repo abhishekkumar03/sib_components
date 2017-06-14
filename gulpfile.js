@@ -84,11 +84,29 @@ gulp.task('watch:transTemplatesDev', function() {
   return gulp.watch('./app/**/*', ['TransTemplatesDev']);
 });
 
+//Start a test server with doc root at build folder and 
+//listening to 9001 port. Home page = http://localhost:9001
+gulp.task("startServer", function(){
+    connect.server({
+        root : "./example/build",
+        livereload: true,
+        fallback: './example/build/index.html'
+    });
+});
+
+gulp.task('connectAssets', function () {
+  connect.server({
+    root: './example/assets',
+    port: 8001,
+    livereload: true
+  });
+});
 
 /**
  * Main tasks
  */
 
+gulp.task('serve', ['startServer', 'connectAssets']);
 gulp.task('watch', ['markCampaignsDev', 'watch:markCampaignsDev']);
 gulp.task('markCampaignsDev', ['markCampaignsDev']);
 gulp.task('markCampaigns', ['markCampaigns']);
