@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 class CreationRecipients extends Component {
     constructor(props) {
         super(props);
@@ -12,11 +12,11 @@ class CreationRecipients extends Component {
     }
     render() {
     
-    return (
-        <div>
-            Reciepnts page
-        </div>
-    );
-  }
+        return (
+            <div>
+                Reciepnts page
+            </div>
+        );
+    }
 }
 export default CreationRecipients;

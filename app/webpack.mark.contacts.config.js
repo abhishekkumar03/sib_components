@@ -4,8 +4,8 @@ var webpack = require('webpack');
 module.exports = {
     entry: ["./marketing/contacts/router.js", "whatwg-fetch"],
     output: {
-        filename: "../../../../assets/js/dependencies/contacts-bundle.js",
-        sourceMapFilename: "../../../../assets/js/dependencies/contacts-bundle.map"
+        filename: "./example/assets/js/dependencies/bundle.js",
+        sourceMapFilename: "./example/assets/js/dependencies/bundle.map"
     },
     devtool: '#cheap-module-source-map',
     module: {

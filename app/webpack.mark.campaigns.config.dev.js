@@ -3,8 +3,8 @@ var path = require('path');
 module.exports = {
     entry: ["./marketing/campaigns/router.js", "whatwg-fetch"],
     output: {
-        filename: "../../../../assets/js/dependencies/campaigns-bundle.js",
-        sourceMapFilename: "../../../../assets/js/dependencies/campaigns-bundle.map"
+        filename: "./example/assets/js/dependencies/bundle.js",
+        sourceMapFilename: "./example/assets/js/dependencies/bundle.map"
     },
     devtool: '#cheap-module-source-map',
     module: {

@@ -1,3 +1,6 @@
 /test/**
 /node_modules/**
 /example/assets/js/dependencies/**
+gulpfile.js
+/app/webpack.*.*.config.js
+/app/webpack.*.*.config.dev.js

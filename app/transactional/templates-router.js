@@ -5,5 +5,5 @@ import ReactDOM from 'react-dom';
 import MainLayout from './layouts/main-layout';
 ReactDOM.render(
     <MainLayout />, 
-    document.getElementById('content')
+    document.getElementById('page-container')
 );

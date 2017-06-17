@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 class CreationSetup extends Component {
     constructor(props) {
         super(props);
@@ -13,9 +13,9 @@ class CreationSetup extends Component {
             <div>
                 Setup page
             </div>
-        )
+        );
     }    
      
-};
+}
 
 export default CreationSetup;

@@ -1,6 +1,5 @@
-import React, { Component, PropTypes } from 'react';
-import CustomAlert from '../custom-alert';
-import {browserHistory} from 'react-router';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 class MainLayout extends Component {
     constructor(props) {
         super(props);
@@ -10,7 +9,7 @@ class MainLayout extends Component {
     }
 
     render() {
-        let {content, header, params} = this.props;
+        let {content, header} = this.props;
 
         let contentData = content && React.cloneElement(content, {});
         let headerData = header && React.cloneElement(header, {});
@@ -18,8 +17,6 @@ class MainLayout extends Component {
         return (
             <div className="container-fluid fade in fade-load" id="main-container">                
                 {/* begin #main-content */}
-                {alertDisplay}
-                
                 <div id="main-content">
                     
                     {/* begin #header */}

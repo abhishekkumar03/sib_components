@@ -8,7 +8,8 @@
 // @last edit          15/11/2016
 // @by                 Laure <laure@sendinblue.com>
 */
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class Header extends Component {
     constructor(props) {
