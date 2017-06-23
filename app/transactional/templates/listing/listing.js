@@ -22,18 +22,19 @@ class Listing extends Component {
                         
                                 <div className="pull-left campselecteall checkbox camp-list-select-btn" style={{marginleft: '5px', display: 'block'}}>
                                     <label>
-                                        <input type="checkbox" id="inlineCheckbox1" value="option1" />
+                                        <input type="checkbox" id="selectall" value="all" />
                                         <small><b>Select All</b></small>
                                     </label>
                                 </div>
                             
                                 <div className="pull-left" id="checkaction" style={{display:'none', marginLeft:'10px', marginTop:'8px'}}>
                                     <div className="btn-group">
-                                        <a href="#" className="archive_all btn btn-default btn-xs" data-type="classic">
-                                            <i className="fa fa-file-archive-o"></i> Archive
+                                        <a href="#" className="archive_all btn btn-default btn-xs" action-name="archive_all" data-type="classic" req_from="sent">
+                                            <i className="fa fa-file-archive-o"></i>Archive
                                         </a>
-                                    </div> 
+                                    </div>
                                 </div>
+                                
                             </div>
                             {/* end .col */}
                             
@@ -62,7 +63,7 @@ class Listing extends Component {
                                                     </div>
                                                 </td>
                                                 <td className="text-muted">#65</td>
-                                                <td>La famille du Grizzly sest agrandi p...</td>
+                                                <td>La famille du Grizzly s</td>
                                                 <td></td>
                                                 <td className="text-light text-left">
                                                     <span data-original-title="Creation date" data-toggle="tooltip" data-placement="top" className="tooltip-help">24 Oct, 2016 06:53 AM</span>
@@ -80,15 +81,15 @@ class Listing extends Component {
                                                                 <a href="javascript:void(0)" id="tested_65" className="camp_action"><i className="fa fa-share-square-o"></i> Send a test <span className="label label-default"><i className="fa fa-unchecked"></i> Not sent</span></a>
                                                             </li>
                                                             <li>
-                                                                <a href="#" className="camp_action replicate_class" data-type="classic"><i className="fa fa-asterisk"></i> Replicate</a>
+                                                                <a href="#" className="camp_action replicate_class" action-name="replicate" data-type="classic"><i className="fa fa-asterisk"></i> Replicate</a>
                                                             </li>
                                                             <li>
-                                                                <a className="replicate_class camp_action" href="#" data-type="template">
+                                                                <a className="replicate_class camp_action" href="#" action-name="replicate_template" data-type="template">
                                                                     <span className="glyphicon glyphicon-asterisk"></span> Replicate
                                                                 </a>
                                                             </li>
                                                             <li>
-                                                                <a className="deleteDraft del_template camp_action" href="#" id="deleteDraft_91"><span className="glyphicon glyphicon-trash"></span> Delete</a>
+                                                                <a className="deleteDraft del_template camp_action" href="#" id="deleteDraft_91" campname="template"><span className="glyphicon glyphicon-trash"></span> Delete</a>
                                                             </li>
                                                         </ul>
                                                     </div>

@@ -1,7 +1,7 @@
 var path = require('path');
 
 module.exports = {
-    entry: ["./app/transactional/templates-router.js", "whatwg-fetch"],
+    entry: ["./app/marketing/contacts-router.js", "whatwg-fetch"],
     output: {
         filename: "./example/assets/js/dependencies/bundle.js",
         sourceMapFilename: "./example/assets/js/dependencies/bundle.map"

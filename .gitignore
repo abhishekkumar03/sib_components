@@ -38,6 +38,9 @@ jspm_packages
 
 # Editors
 .idea
+.DS_Store
+app/.DS_Store
+./app/.DS_Store
 
 # Lib
 lib

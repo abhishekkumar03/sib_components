@@ -3,14 +3,14 @@ var gulp = require('gulp');
 var webpack = require('webpack-stream');
 var connect = require("gulp-connect");
 
-var webpackMarkCampaignsConfig = require('./app/webpack.mark.campaigns.config.js');
-var webpackMarkCampaignsConfigDev = require('./app/webpack.mark.campaigns.config.dev.js');
+var webpackMarkCampaignsConfig = require('./webpack.mark.campaigns.config.js');
+var webpackMarkCampaignsConfigDev = require('./webpack.mark.campaigns.config.dev.js');
 
-var webpackMarkContactsConfig = require('./app/webpack.mark.contacts.config.js');
-var webpackMarkContactsConfigDev = require('./app/webpack.mark.contacts.config.dev.js');
+var webpackMarkContactsConfig = require('./webpack.mark.contacts.config.js');
+var webpackMarkContactsConfigDev = require('./webpack.mark.contacts.config.dev.js');
 
-var webpackTransTemplatesConfig = require('./app/webpack.trans.templates.config.js');
-var webpackTransTemplatesConfigDev = require('./app/webpack.trans.templates.config.dev.js');
+var webpackTransTemplatesConfig = require('./webpack.trans.templates.config.js');
+var webpackTransTemplatesConfigDev = require('./webpack.trans.templates.config.dev.js');
 
 //gulp.task('clean:build', function() {
     //del('..assets/js/dependencies/campaigns-bundle.js')
@@ -26,7 +26,7 @@ gulp.task('markCampaigns', [], function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('markCampaignsDev', [], function() {
+gulp.task('markCampaignsDev:markCampaigns', [], function() {
   return gulp.src('./app/marketing/campaigns-router.js')
     .pipe(webpack(webpackMarkCampaignsConfigDev))
     .on('error', function handleError() {
@@ -35,8 +35,8 @@ gulp.task('markCampaignsDev', [], function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('watch:markCampaignsDev', function() {
-  return gulp.watch('./app/**/*', ['markCampaignsDev']);
+gulp.task('watch:markCampaigns', function() {
+  return gulp.watch('./**/*', ['markCampaigns:markCampaigns']);
 });
 
 // Code for marketing contacts components..
@@ -49,7 +49,7 @@ gulp.task('markContacts', [], function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('markContactsDev', [], function() {
+gulp.task('markContactsDev:markContacts', [], function() {
   return gulp.src('./app/marketing/contacts-router.js')
     .pipe(webpack(webpackMarkContactsConfigDev))
     .on('error', function handleError() {
@@ -58,8 +58,8 @@ gulp.task('markContactsDev', [], function() {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('watch:markContactsDev', function() {
-  return gulp.watch('./app/**/*', ['markContactsDev']);
+gulp.task('watch:markContacts', function() {
+  return gulp.watch('./**/*', ['markContactsDev:markContacts']);
 });
 
 // Code for transectional components..
@@ -82,7 +82,7 @@ gulp.task('transTemplatesDev:transTemplates', [], function() {
 });
 
 gulp.task('watch:transTemplates', function() {
-  return gulp.watch('./app/**/*', ['TransTemplatesDev:transTemplates']);
+  return gulp.watch('./**/*', ['TransTemplatesDev:transTemplates']);
 });
 
 //Start a test server with doc root at build folder and 
@@ -108,15 +108,16 @@ gulp.task('connectAssets', function () {
  */
 
 gulp.task('serve', ['startServer', 'connectAssets']);
-gulp.task('watch', ['markCampaignsDev', 'watch:markCampaignsDev']);
-gulp.task('markCampaignsDev', ['markCampaignsDev']);
+
+gulp.task('watch', ['markCampaignsDev:markCampaigns', 'watch:markCampaigns']);
+gulp.task('markCampaignsDev', ['markCampaignsDev:markCampaigns']);
 gulp.task('markCampaigns', ['markCampaigns']);
 
-gulp.task('watch', ['markContactsDev', 'watch:markContactsDev']);
-gulp.task('markContactsDev', ['markContactsDev']);
+gulp.task('watch', ['markContactsDev:markContacts', 'watch:markContacts']);
+gulp.task('markContactsDev', ['markContactsDev:markContacts']);
 gulp.task('markContacts', ['markContacts']);
 
-gulp.task('watch', ['transTemplatesDev:transTemplates', 'watch:transTemplatesDev']);
+gulp.task('watch', ['transTemplatesDev:transTemplates', 'watch:transTemplates']);
 gulp.task('transTemplatesDev', ['transTemplatesDev:transTemplates']);
 gulp.task('transTemplates', ['transTemplates']);
 
